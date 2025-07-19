@@ -18,7 +18,7 @@ This project demonstrates the implementation of a Library Management System usin
  - Database Creation: Created a database named library_db.
  - Table Creation: Created tables for branches, employees, members, books, issued status, and return status. Each table includes relevant columns and relationships.
 
-'' create database library_project;
+'''sql create database library_project;
 use library_project;
 select * from branch ;
 select * from employees;
@@ -81,7 +81,7 @@ ALTER TABLE employees MODIFY branch_id varchar(20)
 ALTER TABLE employees
 ADD CONSTRAINT fk_employeeid
 FOREIGN KEY (branch_id)
-REFERENCES branch(branch_id) ''
+REFERENCES branch(branch_id) ''' 
 
 2)  **CRUD Operations**
 Create: Inserted sample records into the books table.
@@ -90,7 +90,8 @@ Update: Updated records in the employees table.
 Delete: Removed records from the members table as needed.
 
 Task 1. Create a New Book Record -- "978-1-60129-456-2', 'To Kill a Mockingbird', 'Classic', 6.00, 'yes', 'Harper Lee', 'J.B. Lippincott & Co.')"
-''insert into books values ('978-1-60129-456-2', 'To Kill a Mockingbird', 'Classic', 6.00, 'yes', 'Harper Lee', 'J.B. Lippincott & Co.')''
+'''sql 
+insert into books values ('978-1-60129-456-2', 'To Kill a Mockingbird', 'Classic', 6.00, 'yes', 'Harper Lee', 'J.B. Lippincott & Co.')'''
 
 
 
